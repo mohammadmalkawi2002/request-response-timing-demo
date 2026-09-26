@@ -1,0 +1,25 @@
+# Visual Studio
+.vs/
+**/.vs/
+
+# .NET
+**/bin/
+**/obj/
+
+# Angular / Node
+**/node_modules/
+**/dist/
+.angular/
+
+# User-specific Visual Studio files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
