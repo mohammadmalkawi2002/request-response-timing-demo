@@ -1,0 +1,54 @@
+<div class="container py-4">
+
+  <div class="mb-4">
+    <a routerLink="/products" class="btn btn-outline-secondary">
+      ← Back to Products
+    </a>
+  </div>
+
+  @if (product(); as product) {
+
+  <div class="card shadow-sm">
+
+    <div class="card-header">
+      <h4 class="mb-0">Product Details</h4>
+    </div>
+
+    <div class="card-body">
+
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <strong>ID</strong>
+          <p class="mb-0">{{ product.id }}</p>
+        </div>
+
+        <div class="col-md-6">
+          <strong>Name</strong>
+          <p class="mb-0">{{ product.name }}</p>
+        </div>
+
+        <div class="col-md-6">
+          <strong>Category</strong>
+          <p class="mb-0">{{ product.categoryName }}</p>
+        </div>
+
+        <div class="col-md-6">
+          <strong>Price</strong>
+          <p class="mb-0">{{ product.price }}</p>
+        </div>
+
+        <div class="col-md-6">
+          <strong>Stock Quantity</strong>
+          <p class="mb-0">{{ product.stockQuantity }}</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  }
+
+</div>
